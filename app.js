@@ -8,7 +8,7 @@ const app = express();
 app.use(morgan('dev'))
 app.use(express.urlencoded( {extended: true }));
 app.use(express.json());
-app.use("/home", shoppingRoutes);
+app.use("/items", shoppingRoutes);
 
 // This is a 404 handler
 app.use((req, res, next) => {
